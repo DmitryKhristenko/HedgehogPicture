@@ -16,12 +16,12 @@
 		B53A4D6B2992A14100E84684 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D6A2992A14100E84684 /* CustomCollectionViewCell.swift */; };
 		B53A4D6D2992ABB200E84684 /* LayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D6C2992ABB200E84684 /* LayoutDelegate.swift */; };
 		B53A4D76299381BC00E84684 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D75299381BC00E84684 /* Logger.swift */; };
-		B53A4D782993823000E84684 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D772993823000E84684 /* PhotoViewModel.swift */; };
 		B53A4D7B2993827300E84684 /* ApiImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D7A2993827300E84684 /* ApiImages.swift */; };
 		B53A4D7D299382A000E84684 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D7C299382A000E84684 /* ApiKey.swift */; };
 		B53A4D7F299382DE00E84684 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4D7E299382DE00E84684 /* NetworkManager.swift */; };
 		B5833A63299C43A100E70C7E /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5833A62299C43A100E70C7E /* ImageDetailViewController.swift */; };
 		B59BEB8C2995411400F1A139 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B59BEB8B2995411300F1A139 /* .gitignore */; };
+		B59D516D29A37CCA0056CD51 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B59D516C29A37CCA0056CD51 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +36,12 @@
 		B53A4D6A2992A14100E84684 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B53A4D6C2992ABB200E84684 /* LayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDelegate.swift; sourceTree = "<group>"; };
 		B53A4D75299381BC00E84684 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		B53A4D772993823000E84684 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		B53A4D7A2993827300E84684 /* ApiImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiImages.swift; sourceTree = "<group>"; };
 		B53A4D7C299382A000E84684 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		B53A4D7E299382DE00E84684 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B5833A62299C43A100E70C7E /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		B59BEB8B2995411300F1A139 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B59D516C29A37CCA0056CD51 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,7 @@
 		B53A4D4A299299B100E84684 = {
 			isa = PBXGroup;
 			children = (
+				B59D516C29A37CCA0056CD51 /* .swiftlint.yml */,
 				B59BEB8B2995411300F1A139 /* .gitignore */,
 				B53A4D55299299B100E84684 /* HedgehogPicture */,
 				B53A4D54299299B100E84684 /* Products */,
@@ -115,9 +116,9 @@
 		B53A4D7329937F5C00E84684 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				B53A4D5F299299B500E84684 /* Assets.xcassets */,
 				B53A4D56299299B100E84684 /* AppDelegate.swift */,
 				B53A4D58299299B100E84684 /* SceneDelegate.swift */,
-				B53A4D5F299299B500E84684 /* Assets.xcassets */,
 				B53A4D6C2992ABB200E84684 /* LayoutDelegate.swift */,
 				B53A4D75299381BC00E84684 /* Logger.swift */,
 				B53A4D7C299382A000E84684 /* ApiKey.swift */,
@@ -128,7 +129,6 @@
 		B53A4D742993816300E84684 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B53A4D772993823000E84684 /* PhotoViewModel.swift */,
 				B53A4D6A2992A14100E84684 /* CustomCollectionViewCell.swift */,
 			);
 			path = ViewModels;
@@ -152,6 +152,7 @@
 				B53A4D4F299299B100E84684 /* Sources */,
 				B53A4D50299299B100E84684 /* Frameworks */,
 				B53A4D51299299B100E84684 /* Resources */,
+				B59D516B29A353770056CD51 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -200,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59D516D29A37CCA0056CD51 /* .swiftlint.yml in Resources */,
 				B59BEB8C2995411400F1A139 /* .gitignore in Resources */,
 				B53A4D63299299B500E84684 /* LaunchScreen.storyboard in Resources */,
 				B53A4D60299299B500E84684 /* Assets.xcassets in Resources */,
@@ -209,13 +211,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B59D516B29A353770056CD51 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B53A4D4F299299B100E84684 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B53A4D7B2993827300E84684 /* ApiImages.swift in Sources */,
-				B53A4D782993823000E84684 /* PhotoViewModel.swift in Sources */,
 				B5833A63299C43A100E70C7E /* ImageDetailViewController.swift in Sources */,
 				B53A4D5B299299B100E84684 /* ViewController.swift in Sources */,
 				B53A4D7F299382DE00E84684 /* NetworkManager.swift in Sources */,
@@ -300,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -379,7 +402,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +431,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

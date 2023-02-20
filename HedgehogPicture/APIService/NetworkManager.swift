@@ -7,17 +7,13 @@
 
 import UIKit
 
-class NetworkManager {
-
+final class NetworkManager {
     weak var delegate: DataReloadDelegate?
-    
-    var imagesResults: [ApiImages] = []
-    
-    var currentPage = 0
-    
+    weak var paginationDelegate: PaginationDelegate?
+    static var imagesResults: [ApiImages] = []
+    private var currentPage = 0
     func fetchPhotos(typedSearch: String, page: Int) {
         let urlString = "https://serpapi.com/search.json?engine=google&q=\(typedSearch)&tbm=isch&ijn=\(page)&api_key=\(ApiKey.shared.key)"
-        
         guard let url = URL(string: urlString) else {
             Logger.shared.debugPrint("Error in URL creation")
             return
@@ -35,31 +31,24 @@ class NetworkManager {
                         return
                     }
                     if safeResults.count <= 100 {
-                        self?.imagesResults = safeResults
+                        NetworkManager.imagesResults = safeResults
                     } else {
-                        self?.imagesResults.append(contentsOf: safeResults)
+                        NetworkManager.imagesResults.append(contentsOf: safeResults)
                     }
-                    self?.imagesResults = safeResults
                     self?.delegate?.reloadData()
-                    print("jsonResults - \(String(describing: jsonResults.images_results?.count))")
-                    print("local variable in NetworkManager - \(String(describing: self?.imagesResults.count))")
-                    print(url)
+                    self?.paginationDelegate?.didFetchPhotos()
                 }
-            }
-            catch {
+            } catch {
                 Logger.shared.debugPrint(error)
             }
         }
         task.resume()
     }
-    
-    func loadNextPage(for typedSearch: String) {
-        currentPage = 1
-        fetchPhotos(typedSearch: typedSearch, page: currentPage) // fetch new page of results
-    }
-    
 }
 
 protocol DataReloadDelegate: AnyObject {
     func reloadData()
+}
+protocol PaginationDelegate: AnyObject {
+    func didFetchPhotos()
 }

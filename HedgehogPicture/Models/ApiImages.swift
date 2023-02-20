@@ -7,6 +7,7 @@
 
 import Foundation
 
+// swiftlint:disable all
 struct ImagesResult: Codable {
     let images_results: [ApiImages]?
 }
@@ -17,4 +18,5 @@ struct ApiImages: Codable {
     let original: String? // photo itself
     let original_width: Int?
     let original_height: Int?
+    let title: String?
 }
