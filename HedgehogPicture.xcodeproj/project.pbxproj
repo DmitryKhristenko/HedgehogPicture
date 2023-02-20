@@ -23,6 +23,7 @@
 		B59BEB8C2995411400F1A139 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B59BEB8B2995411300F1A139 /* .gitignore */; };
 		B59D516D29A37CCA0056CD51 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B59D516C29A37CCA0056CD51 /* .swiftlint.yml */; };
 		B59D516F29A3E8230056CD51 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B59D516E29A3E8230056CD51 /* readme.md */; };
+		B59D517129A3EB2D0056CD51 /* hedgehog_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = B59D517029A3EB2C0056CD51 /* hedgehog_gif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B59BEB8B2995411300F1A139 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B59D516C29A37CCA0056CD51 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B59D516E29A3E8230056CD51 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		B59D517029A3EB2C0056CD51 /* hedgehog_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hedgehog_gif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B53A4D7029937E1B00E84684 /* Controllers */,
 				B53A4D7329937F5C00E84684 /* Config */,
 				B53A4D64299299B500E84684 /* Info.plist */,
+				B59D517029A3EB2C0056CD51 /* hedgehog_gif.gif */,
 			);
 			path = HedgehogPicture;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59D516D29A37CCA0056CD51 /* .swiftlint.yml in Resources */,
+				B59D517129A3EB2D0056CD51 /* hedgehog_gif.gif in Resources */,
 				B59BEB8C2995411400F1A139 /* .gitignore in Resources */,
 				B53A4D63299299B500E84684 /* LaunchScreen.storyboard in Resources */,
 				B53A4D60299299B500E84684 /* Assets.xcassets in Resources */,
