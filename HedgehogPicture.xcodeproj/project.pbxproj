@@ -22,6 +22,7 @@
 		B5833A63299C43A100E70C7E /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5833A62299C43A100E70C7E /* ImageDetailViewController.swift */; };
 		B59BEB8C2995411400F1A139 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B59BEB8B2995411300F1A139 /* .gitignore */; };
 		B59D516D29A37CCA0056CD51 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B59D516C29A37CCA0056CD51 /* .swiftlint.yml */; };
+		B59D516F29A3E8230056CD51 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B59D516E29A3E8230056CD51 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B5833A62299C43A100E70C7E /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		B59BEB8B2995411300F1A139 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B59D516C29A37CCA0056CD51 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B59D516E29A3E8230056CD51 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		B53A4D4A299299B100E84684 = {
 			isa = PBXGroup;
 			children = (
+				B59D516E29A3E8230056CD51 /* readme.md */,
 				B59D516C29A37CCA0056CD51 /* .swiftlint.yml */,
 				B59BEB8B2995411300F1A139 /* .gitignore */,
 				B53A4D55299299B100E84684 /* HedgehogPicture */,
@@ -205,6 +208,7 @@
 				B59BEB8C2995411400F1A139 /* .gitignore in Resources */,
 				B53A4D63299299B500E84684 /* LaunchScreen.storyboard in Resources */,
 				B53A4D60299299B500E84684 /* Assets.xcassets in Resources */,
+				B59D516F29A3E8230056CD51 /* readme.md in Resources */,
 				B53A4D5E299299B100E84684 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
