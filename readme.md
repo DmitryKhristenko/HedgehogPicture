@@ -15,4 +15,4 @@ MVVM pattern was used.
 #### Make sure to set the correct API key in the ApiKey struct after installation.
  
 
-![](hedgehog_gif.gif)
+![](HedgehogPicture/hedgehog_gif.gif)
